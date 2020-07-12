@@ -1,0 +1,53 @@
+.portal-spl-text {
+  // margin-top: 16px;
+  // height: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 0;
+  width: 100%;
+  height: 300px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: .8rem;
+  &:focus {
+    outline: none;
+  }
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);  
+}
+.formControl {
+  min-width: 120px;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+
+.portal-quill__container {
+  height: calc(100% - 42px);
+}
+
+.button {
+  margin: 30px;
+}
+
+.leftIcon { 
+  margin-right: 30px;
+}
+// leftIcon: {
+//   marginRight: theme.spacing.unit
+// },
+// rightIcon: {
+//   marginLeft: theme.spacing.unit
+// }
+
+
+// .portal-spl {
+//   height: 100%;
+//   width: 100%;
+//   box-sizing: border-box;
+//   box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
+//   animation: portal-note  .7s ease-out forwards;
+//   animation-iteration-count: 1;
+// }

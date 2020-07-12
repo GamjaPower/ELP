@@ -1,0 +1,32 @@
+.portal-chart-tabs-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.portal-chart-tabs-root {
+  text-transform: none;
+  height: 86px;
+}
+
+.portal-chart-tabs-wrapper {
+  flex-direction: column-reverse;
+}
+
+.portal-trend-up {
+  color: #4caf50;
+}
+
+.portal-trend-down {
+  color: #f44336;
+}
+
+.portal-trend-icon {
+  width: 10px;
+  height: 10px;
+  padding-right: 4px;
+}
+
+.portal-tab-chart {
+  padding: 24px;
+  position: relative;
+  height: 300px;
+}

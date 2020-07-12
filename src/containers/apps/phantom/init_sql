@@ -1,0 +1,32 @@
+create table t1( f1 char(1) ); 
+insert into phantom_job (name) values('1');
+
+drop table phantom_job;
+create table phantom_job ( 
+	name varchar(255) primary key,
+	spl text, 
+	severity varchar(12),
+	sensitivity varchar(12), 
+	crontab varchar(40)
+);
+
+drop table phantom_job;
+
+insert into phantom_job 
+(name, spl, severity, sensitivity, crontab, status) 
+values ('DNS Tunneling1', 'tstats c from webfilter by src_ip', 'LOW', 'RED', '* * * * *', '1');
+
+insert into phantom_job 
+(name, spl, severity, sensitivity, crontab, status) 
+values ('DNS Tunneling2', 'tstats c from webfilter by src_ip', 'LOW', 'AMBER', '* * * * *', '1');
+
+insert into phantom_job 
+(name, spl, severity, sensitivity, crontab, status) 
+values ('DNS Tunneling3', 'tstats c from webfilter by src_ip', 'LOW', 'GREEN', '* * * * *', '1');
+
+insert into phantom_job 
+(name, spl, severity, sensitivity, crontab, status) 
+values ('DNS Tunneling4', 'tstats c from webfilter by src_ip', 'LOW', 'WHITE', '* * * * *', '1');
+
+
+

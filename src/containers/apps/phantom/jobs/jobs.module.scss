@@ -1,0 +1,51 @@
+.portal-phantom-subject {
+  margin: 16px;
+}
+.portal-thread__header__date {
+  align-self: center;
+  margin: 0;
+}
+.formControl {
+  min-width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.job-name {
+  min-width: 120px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+.textfieldhelper {
+  margin-bottom: 15px;
+}
+
+.text-transform { 
+  text-transform: none;
+}
+.portal-spl-text {
+  // margin-top: 16px;
+  // height: 250px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 0;
+  width: 100%;
+  height: 100px;
+  resize: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: .8rem;
+  &:focus {
+    outline: none;
+  }
+  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);  
+}
+
+
+.delete {
+  margin-left: auto;
+}
+

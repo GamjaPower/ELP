@@ -1,0 +1,75 @@
+html {
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, body, #root {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+.portal-hide-scrollbars {
+  -ms-overflow-style: none;
+}
+
+.portal-hide-scrollbars::-webkit-scrollbar {
+  width: 0;
+}
+
+.portal-flex {
+  flex: 1 1 auto;
+}
+
+/* Elements Pages */
+.portal-pages__header {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  max-height: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  background: rgba(0,0,0,0.050);
+}
+
+.portal-pages__header-demo {
+  max-width: 400px;
+  margin-top: 0;
+  margin-bottom: 150px;
+  padding: 0px 48px;
+  display: flex;
+  flex: 1 1 auto;
+  position: relative;
+  justify-content: center;
+}
+
+.portal-pages__content-inner {
+  margin-top: -200px;
+  padding: 16px;
+  box-shadow: 0px -40px 100px -50px rgba(0, 0, 0, 0.3), -20px 0px 40px -50px rgba(0, 0, 0, 0.2), 20px 0px 40px -50px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: portal-pages__content-inner .3s forwards 1 ease-in-out;
+}
+
+
+
+
+@keyframes portal-pages__content-inner {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

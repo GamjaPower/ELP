@@ -1,0 +1,71 @@
+.portal-chart-tabs {
+  overflow-x: auto;
+}
+
+
+.portal-chart-tabs-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.portal-chart-tabs-root {
+  text-transform: none;
+}
+
+.hidden { display:none; }
+.block { display:block; }
+
+
+.progress-item { 
+  max-width: 50%;
+}
+
+.progress { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid gold; 
+  padding: 100px; 
+}
+
+.fixed_header { 
+
+  // position: fixed;
+  // top: 200;
+  /* width: 100% */
+  // left: 0;
+  // right: 0;
+
+  /* 생략 */
+}
+
+.scrollbar { 
+  // overflow-x: auto;
+
+  // display: 'block';
+  // transform: rotateX(180deg);
+
+}
+
+.indexlist { 
+  padding: 2px; 
+}
+.indexlistbutton { 
+  margin: 5px; 
+}
+
+.indexlistheading { 
+  margin-top: 16px;
+  padding-left: 12px;
+  border-color: #03a9f4;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
+
+.cluster { 
+  min-width: 650;
+}
+
+
+tr:nth-child(even) {background-color: #f2f4f5;} 

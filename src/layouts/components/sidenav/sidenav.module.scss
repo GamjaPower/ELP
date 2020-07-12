@@ -1,0 +1,21 @@
+.portal-toolbar-brand {
+  max-height: 46px;
+  max-width: 100%;
+  padding: 8px 0px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+.portal-toolbar-brand-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.portal-sidenav-classic, .portal-sidenav-toolbar, .portal-sidenav-boxed {
+  width: 256px;
+}
+.portal-sidenav-compact {
+  width: 80px;
+}
+
+.portal-sidenav-funky {
+  width: 96px;
+}
