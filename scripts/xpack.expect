@@ -1,0 +1,32 @@
+#!/usr/bin/expect -f
+ 
+set timeout -1
+cd /usr/share/elasticsearch
+spawn bin/elasticsearch-setup-passwords interactive
+expect "N]"
+send -- "y\n"
+expect "elastic]: "
+send -- "password\n"
+expect "elastic]: "
+send -- "password\n"
+expect "apm_system]: " 
+send -- "password\n"
+expect "apm_system]: " 
+send -- "password\n"
+expect "kibana_system]: "
+send -- "password\n"
+expect "kibana_system]: "
+send -- "password\n"
+expect "logstash_system]: "
+send -- "password\n"
+expect "logstash_system]: "
+send -- "password\n"
+expect "beats_system]: "
+send -- "password\n"
+expect "beats_system]: "
+send -- "password\n"
+expect "remote_monitoring_user]: "
+send -- "password\n"
+expect "remote_monitoring_user]: "
+send -- "password\n"
+expect eof
