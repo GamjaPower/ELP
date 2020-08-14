@@ -97,13 +97,8 @@ echo "xpack.encryptedSavedObjects.encryptionKey: 'fhjskloppd678ehkdfdlliverpoolf
 sudo systemctl daemon-reload
 sudo systemctl enable kibana.service
 
-sudo systemctl start elasticsearch
-
 wget https://raw.githubusercontent.com/GamjaPower/ELP/master/scripts/xpack.expect
 
 chmod 755 xpack.expect
-sudo ./xpack.expect
-
-
 
 reboot
