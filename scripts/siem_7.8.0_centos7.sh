@@ -85,7 +85,7 @@ sed -i -r "s|^#server.host:.*$|server.host: \"$HOST_DNS\" |" /etc/kibana/kibana.
 sed -i -r "s|^#server.name:.*$|server.name: \"$HOST_NAME\" |" /etc/kibana/kibana.yml
 
 echo "elasticsearch.hosts: [\"https://$HOST_DNS:9200\"] " >> /etc/kibana/kibana.yml
-echo "elasticsearch.username: kibana" >> /etc/kibana/kibana.yml
+echo "elasticsearch.username: kibana_system" >> /etc/kibana/kibana.yml
 echo "elasticsearch.password: password" >> /etc/kibana/kibana.yml
 echo "server.ssl.enabled: true" >> /etc/kibana/kibana.yml
 echo "server.ssl.certificate: /etc/kibana/certs/node01/node01.crt" >> /etc/kibana/kibana.yml
