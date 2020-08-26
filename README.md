@@ -1,17 +1,17 @@
-# ELP(Elastic Layer for Phantom)
-ELP는 보안 데이터가 수집된 Elasticsearch에 SPL을 사용해서 이벤트를 탐지한 후 해당 이벤트를 Splunk Phantom으로 보내는 기능을 가지고 있습니다. 
-또한 ELP는 SPLUNK의 장점인 SPL을 Elasticsearch에서도 사용할 수 있게 해줍니다. Splunk 엔지니어로서 Elasitcsearch를 사용하다보면 불편한 점이 많이 있습니다. 
-바로 그 그부분을 해결해주는 프로그램이라고 생각하시면 됩니다. 
+# ELP Alert
+ELP Alert를 사용해서 ELK에 수집된 데이터를 분석해서 탐지된 이벤트를 사용자에게 알람을 보낼 수 있습니다. 
+탐지에 사용되는 쿼리는 Splunk에서 사용하는 SPL과 유사한 구조로 구성되어 있어서, 기존에 Splunk를 사용해본 사용자라면 쉽게 적용할 수 있습니다. 
+또한 미리 구축된 탐지 시나리오를 사용하면 바로 사용할 수 있습니다. 
 
 # Getting Started
-이 프로그램은 Splunk를 사용중인데, 라이센스 비용때문에 추가 데이터 수집을 못하는 조직에 적합합니다. 
+이 프로그램은 Elasticsearch를 무료(Basic License)로 사용하고 있는 조직에서 알람 기능을 추가할 때 유용하게 사용할 수 있습니다. 
 예를 들면 엔드포인트 데이터처럼 데이터가 큰 경우 Elasticsearch에 데이터를 저장하고 분석은 SPL을 사용하여 분석할 수 있습니다. 
-ELP를 사용하기 위해서는 Elastic Cluster가 구축되어 있고, 데이터도 수집되어 있어야 합니다. 
+ELP Alert를 사용하기 위해서는 Elastic Cluster가 구축되어 있고, 데이터도 수집되어 있어야 합니다. 
 즉, ELP에는 Elasticsearch를 포함하고 있지 않습니다.
 
 # 프로그램 설치 및 실행 
-[DIST 폴더](https://github.com/GamjaPower/ELP/tree/master/dist)에서 최신 버전의 설치 파일을 다운로드한 후 설치하고자 하는 디렉토리에 파일을 압축해제하면 됩니다. 그리고 els-front를 실행하면 프로그램이 실행됩니다. rpm 설치 파일은 충분히 테스트를 한 후 배포하도록 하겠습니다.(아직 테스트가 완료되지 않았습니다.)   
-예) tar zxvf elp-0.9.1-linux-x86_64.tar.gz ; cd elp ; ./els-front & 
+[DIST 폴더](https://github.com/GamjaPower/ELP/tree/master/dist)에서 최신 버전의 설치 파일을 다운로드한 후 설치하고자 하는 디렉토리에 파일을 압축해제하면 됩니다. 그리고 elp-front를 실행하면 프로그램이 실행됩니다. RPM 설치 파일이 필요한 경우 sst9696@gmail.com으로 메일을 주시면 됩니다. 
+예) tar zxvf elp-0.9.1-linux-x86_64.tar.gz ; cd elp ; ./elp-front & 
 
 # 관리자 화면 접속 방법 
 브라우저로 설치된 서버의 IP의 7080포트로 접속 후 secret / garden 입력하면 됩니다. 
