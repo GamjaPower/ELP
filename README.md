@@ -22,15 +22,7 @@ ELP Alert를 사용하기 위해서는 Elastic Cluster가 구축되어 있고, �
 # ScreenShot
 
 ## SPL 기본 기능  
-![Search01](https://github.com/GamjaPower/ELP/raw/master/public/elp_search_01.png)
-
-## TIMECHART
-![Search02](https://github.com/GamjaPower/ELP/raw/master/public/elp_search_02.png)
-
-## 시나리오 탐지 및 팬텀 연동 
-![Phantom01](https://github.com/GamjaPower/ELP/raw/master/public/elp_phantom_01.png)
-
-
+![Search01](https://github.com/GamjaPower/ELP/raw/master/public/search_spl.png)
 
 
 ## SPL Command List
@@ -69,10 +61,6 @@ Splunk의 streamstats 명령어와 유사합니다.
 | Type of function               | Supported functions and syntax     | 
 | ------------------------- | ---------------|
 | Aggregate functions       | sum(), avg(), mean(), median(), min(), max()          |
-
-
-### timechart
-예) timechart c from network_traffic by src span="1d"   
 
 
 ### where 
