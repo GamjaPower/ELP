@@ -87,8 +87,8 @@ echo "elasticsearch.hosts: [\"https://$HOST_DNS:9200\"] " >> /etc/kibana/kibana.
 echo "elasticsearch.username: kibana_system" >> /etc/kibana/kibana.yml
 echo "elasticsearch.password: password" >> /etc/kibana/kibana.yml
 echo "server.ssl.enabled: true" >> /etc/kibana/kibana.yml
-echo "server.ssl.certificate: /etc/kibana/certs/node01/node01.crt" >> /etc/kibana/kibana.yml
-echo "server.ssl.key: /etc/kibana/certs/node01/node01.key" >> /etc/kibana/kibana.yml
+echo "server.ssl.certificate: /etc/kibana/certs/$HOST_NAME/$HOST_NAME.crt" >> /etc/kibana/kibana.yml
+echo "server.ssl.key: /etc/kibana/certs/$HOST_NAME/$HOST_NAME.key" >> /etc/kibana/kibana.yml
 echo "elasticsearch.ssl.certificateAuthorities: [ \"/etc/kibana/certs/ca/ca.crt\" ]" >> /etc/kibana/kibana.yml
 echo "xpack.encryptedSavedObjects.encryptionKey: 'fhjskloppd678ehkdfdlliverpoolfcr'" >> /etc/kibana/kibana.yml
 
